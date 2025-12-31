@@ -23,7 +23,7 @@ function createNewRequest(request, url, proxyHostname, originHostname) {
     method: request.method,
     headers: newRequestHeaders,
     body: request.body,
-    redirect: 'follow'
+    redirect: "follow",
   });
 }
 
@@ -89,26 +89,78 @@ async function replaceResponseText(
 
 async function nginx() {
   return `<!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-<title>Welcome to nginx!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>保護地球 · 綠色生態</title>
 <style>
 html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
+body { 
+  width: 35em; 
+  margin: 0 auto;
+  padding: 2em;
+  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2d3748;
+  border-radius: 15px;
+  padding: 2em;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+h1 { 
+  color: #22c55e; 
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.emoji { font-size: 3em; text-align: center; margin: 0.5em 0; }
+p { line-height: 1.8; margin: 1em 0; }
+.tips {
+  background: #dcfce7;
+  border-left: 4px solid #22c55e;
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 5px;
+}
+.tips strong { color: #16a34a; }
+footer {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #64748b;
+}
 </style>
 </head>
 <body>
-<h1>Welcome to nginx!</h1>
-<p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>
-
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
-
-<p><em>Thank you for using nginx.</em></p>
+<div class="container">
+  <div class="emoji">🌍🌱💚</div>
+  <h1>愛護地球，從我做起</h1>
+  
+  <p>地球是我們唯一的家園，保護環境就是保護我們自己的未來。每一個小小的行動，都能為地球帶來改變。</p>
+  
+  <div class="tips">
+    <strong>💡 綠色生活小貼士：</strong>
+    <ul>
+      <li>🚶 減少碳排放：多步行、騎自行車或使用公共交通</li>
+      <li>♻️ 垃圾分類：讓資源循環再利用</li>
+      <li>💧 節約用水：珍惜每一滴水資源</li>
+      <li>🌳 植樹造林：為地球增添綠色</li>
+      <li>🛍️ 減少使用一次性塑料製品</li>
+      <li>💡 節約能源：隨手關燈、使用節能電器</li>
+    </ul>
+  </div>
+  
+  <p><strong>🌏 讓我們一起行動：</strong></p>
+  <p>保護環境不是一個人做了很多，而是每個人都做了一點點。讓我們攜手共建美麗家園，為子孫後代留下一個綠色的地球！</p>
+  
+  <footer>
+    <p><em>💚 地球只有一個，請珍惜愛護 💚</em></p>
+  </footer>
+</div>
 </body>
 </html>`;
 }
@@ -167,10 +219,11 @@ export default {
       ) {
         logError(request, "Invalid");
         return URL302
-          ? Response.redirect(KEEP_PATH
-            ? (URL302 + "/" + url.pathname).replace(/\/+/g, '/')
-            : URL302,
-             302
+          ? Response.redirect(
+              KEEP_PATH
+                ? (URL302 + "/" + url.pathname).replace(/\/+/g, "/")
+                : URL302,
+              302
             )
           : new Response(await nginx(), {
               headers: {
