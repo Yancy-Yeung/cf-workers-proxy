@@ -89,18 +89,18 @@ async function replaceResponseText(
 
 async function nginx() {
   return `<!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>保護地球 · 綠色生態</title>
+<title>지구 보호 · 녹색 생태</title>
 <style>
 html { color-scheme: light dark; }
 body { 
   width: 35em; 
   margin: 0 auto;
   padding: 2em;
-  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-family: 'Malgun Gothic', 'Apple Gothic', sans-serif;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
 }
@@ -138,27 +138,27 @@ footer {
 <body>
 <div class="container">
   <div class="emoji">🌍🌱💚</div>
-  <h1>愛護地球，從我做起</h1>
+  <h1>지구를 사랑하자, 나부터 시작하자</h1>
   
-  <p>地球是我們唯一的家園，保護環境就是保護我們自己的未來。每一個小小的行動，都能為地球帶來改變。</p>
+  <p>지구는 우리가 유일한 고향입니다. 환경을 보호하는 것은 우리 자신의 미래를 보호하는 것입니다. 작은 행동 하나하나가 지구에 변화를 가져올 수 있습니다.</p>
   
   <div class="tips">
-    <strong>💡 綠色生活小貼士：</strong>
+    <strong>💡 녹색 생활 팁:</strong>
     <ul>
-      <li>🚶 減少碳排放：多步行、騎自行車或使用公共交通</li>
-      <li>♻️ 垃圾分類：讓資源循環再利用</li>
-      <li>💧 節約用水：珍惜每一滴水資源</li>
-      <li>🌳 植樹造林：為地球增添綠色</li>
-      <li>🛍️ 減少使用一次性塑料製品</li>
-      <li>💡 節約能源：隨手關燈、使用節能電器</li>
+      <li>🚶 탄소 배출 감소: 도보, 자전거 또는 대중교통 이용</li>
+      <li>♻️ 쓰레기 분류: 자원을 재활용</li>
+      <li>💧 물 절약: 물 한 방울을 아끼자</li>
+      <li>🌳 나무 심기: 지구에 녹색을 더하자</li>
+      <li>🛍️ 일회용 플라스틱 제품 사용 감소</li>
+      <li>💡 에너지 절약: 불 끄기, 에너지 절약 전기제품 사용</li>
     </ul>
   </div>
   
-  <p><strong>🌏 讓我們一起行動：</strong></p>
-  <p>保護環境不是一個人做了很多，而是每個人都做了一點點。讓我們攜手共建美麗家園，為子孫後代留下一個綠色的地球！</p>
+  <p><strong>🌏 함께 행동하자:</strong></p>
+  <p>환경 보호는 한 사람이 많이 하는 것이 아니라, 각자가 조금씩 하는 것입니다. 함께 아름다운 고향을 만들어 후손들에게 녹색 지구를 남겨주자!</p>
   
   <footer>
-    <p><em>💚 地球只有一個，請珍惜愛護 💚</em></p>
+    <p><em>💚 지구는 하나뿐입니다, 아끼고 사랑하세요 💚</em></p>
   </footer>
 </div>
 </body>
