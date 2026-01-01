@@ -89,27 +89,6 @@ Cloudflare Workers HTTP 反向代理
    - dockerhub.xxx.com：你的 worker 自定义域名
    - image_name：镜像名称
 
-## 其他
-
-Telegram Channel: https://t.me/jonssonyan_channel
-
-你可以在 YouTube 上订阅我的频道: https://www.youtube.com/@jonssonyan
-
-如果这个项目对你有帮助，你可以请我喝杯咖啡:
-
-<img src="https://github.com/jonssonyan/install-script/assets/46235235/cce90c48-27d3-492c-af3e-468b656bdd06" width="150" alt="微信赞赏码" title="微信赞赏码"/>
-
-## 贡献者
-
-在这里感谢所有为此项目做出贡献的人
-
-<a href="https://github.com/jonssonyan/cf-workers-proxy/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jonssonyan/cf-workers-proxy" />
-</a>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=jonssonyan/cf-workers-proxy&type=Date)](https://star-history.com/#jonssonyan/cf-workers-proxy&Date)
 
 ## 开源协议
 
