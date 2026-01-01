@@ -1,10 +1,9 @@
 <div align="center">
-
 <h1 align="center">Cloudflare Workers Proxy</h1>
 
-[English](README_EN.md) / 简体中文
 
 Cloudflare Workers HTTP 反向代理
+项目 fork来自 https://github.com/jonssonyan/cf-workers-proxy
 
 <p>
 <a href="https://www.gnu.org/licenses/gpl-3.0.html"><img src="https://img.shields.io/github/license/jonssonyan/cf-workers-proxy" alt="License: GPL-3.0"></a>
